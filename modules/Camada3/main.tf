@@ -40,7 +40,7 @@ resource "aws_db_instance" "db_notifier" {
   skip_final_snapshot    = true
   db_subnet_group_name   = aws_db_subnet_group.sn_group.name
   parameter_group_name   = aws_db_parameter_group.p_group.name
-  vpc_security_group_ids = [var.sg_priv_id]
+  vpc_security_group_ids = [var.sg_priv2_id]
 
   tags = {
     Name = "db_notifier"
