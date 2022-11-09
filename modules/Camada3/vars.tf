@@ -8,7 +8,7 @@ variable "sn_vpcgs_3c_id" {
 }
 
 #SG
-variable "sg_priv_id" {
+variable "sg_priv2_id" {
   type = string
 }
 
