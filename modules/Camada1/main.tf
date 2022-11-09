@@ -107,9 +107,6 @@ resource "aws_security_group" "sg_priv2" {
 }
 
 #EC2 LAUNCH TEMPLATE
-data "template_file" "user_data" {
-  template = file("./modules/ec2/userdata-notifier.sh")
-}
 
 resource "aws_launch_template" "lt_app_notify1" {
   name                   = "lt_app_notify1"
