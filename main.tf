@@ -32,13 +32,13 @@ module "Camada2" {
   source            = "./modules/Camada1"
   sn_vpcgs_2a_id     = module.vpc.sn_vpcgs_2a_id
   sn_vpcgs_2c_id     = module.vpc.sn_vpcgs_2c_id
-  sg_priv_id        = module.ec2.sg_priv_id 
+  sg_priv_id        = module.ec2.sg_priv1_id 
 
 }
     module "Camada3" {
   source            = "./modules/Camada3"
   sn_vpcgs_3a_id     = module.vpc.sn_vpcgs_3a_id
   sn_vpcgs_3c_id     = module.vpc.sn_vpcgs_3c_id
-  sg_priv_id        = module.ec2.sg_priv_id 
+  sg_priv_id        = module.ec2.sg_priv2_id 
 
 }
